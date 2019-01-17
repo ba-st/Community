@@ -96,6 +96,7 @@ If the changes doesn't break the backwards compatibility:
   git checkout release-candidate
   git pull
   git checkout vXX
+  git branch --set-upstream-to=origin/vXX vXX
   git pull
   git merge release-candidate
   git push origin vXX
