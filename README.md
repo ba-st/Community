@@ -10,7 +10,7 @@ The documentation in this repository is licensed under [CC BY-SA 4.0](http://cre
 
 We hangout on [Slack](https://ba-st.slack.com/) where we discuss everything related to the ecosystem.
 
-You can request an invite to @gcotelli , @fortizpenaloza or any other admin.
+You can request an invite to [gcotelli](https://github.com/gcotelli) , [fortizpenaloza](https://github.com/fortizpenaloza) or any other admin.
 
 ## Blog
 
