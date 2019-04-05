@@ -87,9 +87,9 @@ Don't forget to use `MetacelloCypressBaselineProject` as the `projectClass` in t
 
 ## Releasing a new version
 
-If the changes doesn't break the backwards compatibility:
+If the changes don't break backwards compatibility:
 - Issue a pull request with `release-candidate` as the source, targeted to the last major version branch
-- After all the checks passed and the code review is performed
+- After all the checks have passed and the code review is performed
   - If the pull request can be fast-forwarded, merge it with:
   ```
   git fetch origin
@@ -103,7 +103,7 @@ If the changes doesn't break the backwards compatibility:
   ```
   - If the pull request cannot be fast-forwarded use the `Merge pull request` button on the GitHub web interface.
 
-If the changes breaks the backwards compatibility:
+If the changes break backwards compatibility:
 - Create the new major branch
 ```
 git checkout release-candidate
