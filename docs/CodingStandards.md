@@ -20,7 +20,7 @@ Smalltalk projects can use the [GitHub Setup Utility](https://github.com/ba-st/G
     - Disable `Wikis`
     - Check `Issues` and `Projects`
   - In the `Merge button` section
-    - Disable `Allow merge commits`
+    - Disable `Allow squash commits`
     - Disable `Allow rebase merging`
 
 ### Issue Labels
