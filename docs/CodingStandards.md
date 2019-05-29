@@ -28,6 +28,7 @@ Smalltalk projects can use the [GitHub Setup Utility](https://github.com/ba-st/G
 - Open a Pharo 7 image
 - Copy [this code](https://gist.github.com/gcotelli/cd3f3e50faeb37325e8f0eb9288fdb1f) in a Playground
 - Change `REPO`, `OWNER`, `USER` and `PASSWORD`
+  - If you don't want to use your password, or have 2 factor authentication enabled, instead of password you can use an access token with `repo` scope. This can be generated in https://github.com/settings/tokens.
 - `Do it` to get the issue labels configured by using the GitHub API
 
 
