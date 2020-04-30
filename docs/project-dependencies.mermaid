@@ -1,0 +1,113 @@
+graph LR
+  subgraph Language Foundations
+  pharo(Pharo)
+  buoy(Buoy)
+  launchpad(Launchpad)
+  chalten(Chalten)
+  aconcagua(Aconcagua)
+  buoy --> pharo
+  launchpad --> pharo
+  chalten --> aconcagua
+  aconcagua --> pharo
+  end
+
+  subgraph System Foundations
+  kepler(Kepler)
+  kepler --> buoy
+  kepler --> chalten
+  end
+
+  subgraph Persistence
+  sagan(Sagan)
+  object-pool(ObjectPool)
+  p3(P3)
+  glorp(Glorp)
+  glorp-garage(Glorp-Garage)
+  garage(Garage)
+  glorp-sqlite3(Glorp-SQLite)
+  sagan --> buoy
+  sagan --> kepler
+  sagan --> object-pool
+  sagan --> p3
+  sagan --> glorp
+  sagan --> glorp-garage
+  sagan --> garage
+  sagan --> glorp-sqlite3
+  end
+
+  subgraph Middleware
+  ansible(Ansible)
+  xmlparser(XMLParser)
+  ansible --> xmlparser
+  end
+
+  subgraph WebStack
+  seaside(Seaside)
+  boardwalk(Boardwalk)
+  renoirst(RenoirSt)
+  willow(Willow)
+  willow-bootstrap(Willow Bootstrap)
+  willow-jqueryui(Willow JQueryUI)
+  willow-sui(Willow SemanticUI)
+  willow-mixpanel(Willow Mixpanel)
+  willow-spinkit(Willow SpinKit)
+  willow-playground(Willow Playground)
+  highcharts(HighchartsSt)
+  boardwalk --> buoy
+  boardwalk --> seaside
+  renoirst --> buoy
+  renoirst --> seaside
+  willow --> boardwalk
+  willow --> seaside
+  willow --> renoirst
+  willow-mixpanel --> willow
+  willow-jqueryui --> willow
+  willow-jqueryui --> seaside
+  willow-bootstrap --> willow
+  willow-playground --> willow-bootstrap
+  willow-playground --> willow-spinkit
+  willow-spinkit --> willow
+  willow-sui --> willow
+  highcharts --> boardwalk
+  highcharts --> seaside
+  highcharts --> renoirst
+  end
+
+  subgraph HTTP Services
+  teapot(Teapot)
+  jwt(JSONWebToken)
+  jrpc(JRPC)
+  neojson(NeoJSON)
+  hyperspace(Hyperspace)
+  stargate(Stargate)
+  stargate-consul(Stagate Consul)
+  superluminal(Superluminal)
+  hyperspace --> buoy
+  stargate --> teapot
+  stargate --> buoy
+  stargate --> hyperspace
+  stargate --> jwt
+  stargate --> jrpc
+  stargate --> launchpad
+  stargate-consul --> stargate
+  stargate-consul --> launchpad
+  superluminal --> neojson
+  superluminal --> buoy
+  teapot --> neojson
+  neojson --> pharo
+  end
+
+  classDef external-dependency fill:lightblue;
+  class pharo external-dependency;
+  class seaside external-dependency;
+  class teapot external-dependency;
+  class jwt external-dependency;
+  class jrpc external-dependency;
+  class neojson external-dependency;
+  class glorp external-dependency;
+  class garage external-dependency;
+  class glorp-sqlite3 external-dependency;
+  class glorp-garage external-dependency;
+  class p3 external-dependency;
+  class object-pool external-dependency;
+  class xmlparser external-dependency;
