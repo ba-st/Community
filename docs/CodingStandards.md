@@ -82,7 +82,7 @@ Don't forget to use `MetacelloCypressBaselineProject` as the `projectClass` in t
   - `Require pull request reviews before merging`
     - `Dismiss stale pull request approvals when new commits are pushed`
   - `Require status checks to pass before merging`
-    - Status checks for Travis-CI and coveralls
+    - Status checks for Travis-CI/GitHub actions and codecov
   - `Restrict who can push to matching branches`
 - Click on `Create`
 
@@ -96,11 +96,11 @@ If the changes don't break backwards compatibility:
   git fetch origin
   git checkout release-candidate
   git pull
-  git checkout vXX
-  git branch --set-upstream-to=origin/vXX vXX
+  git checkout v{MAJOR}
+  git branch --set-upstream-to=origin/v{MAJOR} v{MAJOR}
   git pull
   git merge release-candidate
-  git push origin vXX
+  git push origin v{MAJOR}
   ```
   - If the pull request cannot be fast-forwarded use the `Merge pull request` button on the GitHub web interface.
 
@@ -109,8 +109,8 @@ If the changes break backwards compatibility:
 ```
 git checkout release-candidate
 git pull
-git checkout -b vXXX
-git push origin vXXX
+git checkout -b v{MAJOR}
+git push origin v{MAJOR}
 ```
 
 Once the major branch is updated, tag this commit with the corresponding version, or use the GitHub releases web ui to create a release at the correspoding commit.

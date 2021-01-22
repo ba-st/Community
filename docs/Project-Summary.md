@@ -4,4 +4,4 @@
 > Chart created using [MermaidJS](https://mermaid-js.github.io/mermaid-live-editor/)
 
 [ba-st]:https://github.com/ba-st
-[dependencies]:project-dependencies.svg
+[dependencies]:images/project-dependencies.svg
