@@ -40,7 +40,8 @@ Smalltalk projects can use the [GitHub Setup Utility](https://github.com/ba-st/G
 ### Code formatting
 
 - Open a Pharo image
-- Copy [this code](https://gist.github.com/gcotelli/54d3648c656cb2ac79872c0932c424b6) in a Playground
+- For Pharo 7/8 copy [this code](https://gist.github.com/gcotelli/54d3648c656cb2ac79872c0932c424b6) in a Playground
+- For Pharo 9+ copy [this code](https://gist.github.com/gcotelli/08730091ba8a4fe0e557aeca489ebde8) in a Playground
 - `Do it` to configure the formatter
 
 ### Baseline groups
