@@ -111,7 +111,7 @@ If the changes break backwards compatibility:
 git checkout release-candidate
 git pull
 git checkout -b v{MAJOR}
-git push origin v{MAJOR}
+git push --set-upstream origin v{MAJOR}
 ```
 
 Once the major branch is updated, tag this commit with the corresponding version, or use the GitHub releases web ui to create a release at the correspoding commit.
